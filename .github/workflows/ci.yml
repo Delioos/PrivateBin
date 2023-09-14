@@ -18,4 +18,4 @@ jobs:
           bootstrap: vendor/autoload.php
           configuration: phpunit.xml
           args: --coverage-text
-          php_extensions: gd
+          php_extensions: "gd"
