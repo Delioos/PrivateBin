@@ -13,6 +13,7 @@ jobs:
         uses: php-actions/phpunit@v3
         env:
           TEST_NAME: Scarlett
+          XDEBUG_MODE: coverage
         with:
           bootstrap: vendor/autoload.php
           configuration: phpunit.xml
