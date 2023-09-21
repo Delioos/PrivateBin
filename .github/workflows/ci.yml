@@ -15,10 +15,9 @@ jobs:
           TEST_NAME: Scarlett
         with:
           bootstrap: vendor/autoload.php
-          php_extensions: "gd xdebug"
           configuration: phpunit.xml
-          args: --coverage-cobertura
-          coverage_cobertura: "coverage/cobertura.xml"
+          php_extensions: "gd xdebug"
+          args: --coverage-cobertura ./cobertura.xml
           version: "9.6.11"
       - name: Code Coverage Summary
         uses: irongut/CodeCoverageSummary@v1.3.0
