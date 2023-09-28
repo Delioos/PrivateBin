@@ -2,7 +2,7 @@
 /**
  * PrivateBin
  *
- * a zero-knowledge paste bin
+ * A zero-knowledge paste bin
  *
  * @link      https://github.com/PrivateBin/PrivateBin
  * @copyright 2012 Sébastien SAUVAGE (sebsauvage.net)
@@ -20,7 +20,7 @@ namespace PrivateBin\Data;
 abstract class AbstractData
 {
     /**
-     * cache for the traffic limiter
+     * Cache for the traffic limiter
      *
      * @access protected
      * @var    array
