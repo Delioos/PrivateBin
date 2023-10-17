@@ -55,6 +55,7 @@ jobs:
           target: "/home/admin"
       - name: multiple command
         uses: appleboy/ssh-action@v1.0.0
+        continue-on-error: true
         with:
           host: "16.170.155.91"
           username: "admin"
