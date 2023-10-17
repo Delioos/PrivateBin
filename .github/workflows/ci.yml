@@ -61,7 +61,6 @@ jobs:
           key: ${{ secrets.KEY }}
           port: 22
           script: |
-            sudo cp -a PrivateBin/ old_version/
             sudo rm -rf PrivateBin/
             sudo tar -xvf deploy.tar
             sudo mv build/ PrivateBin/
