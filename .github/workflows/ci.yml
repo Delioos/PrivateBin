@@ -53,3 +53,18 @@ jobs:
           port: 22
           source: "deploy.tar"
           target: "/home/admin"
+      - name: multiple command
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: "16.170.155.91"
+          username: "admin"
+          key: ${{ secrets.KEY }}
+          port: 22
+          script: |
+            sudo cp -a PrivateBin/ old_version/
+            sudo rm -rf PrivateBin/
+            sudo tar -xvf deploy.tar
+            sudo mv build/ PrivateBin/
+            cd PrivateBin/
+            composer install
+            
